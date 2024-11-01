@@ -1,6 +1,6 @@
 const { db, DataTypes } = require("../db/config");
 
-const User = db.define("User", {
+const Card = db.define("Card", {
     id: {
         type: DataTypes.INTEGER,
         primaryKey: true, 
@@ -9,6 +9,9 @@ const User = db.define("User", {
     username: {
         type: DataTypes.STRING
     },
+    xp: {
+        type: DataTypes.INTEGER
+    }
 });
 
-module.exports = User;
+module.exports = Card;
